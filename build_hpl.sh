@@ -14,7 +14,11 @@ module load intel-mkl
 # should find if loaded correctly
 which mpicc
 
-make arch=cirrus clean
+if [ -d "src/auxil/cirrus" ]; then
+    make arch=cirrus clean
+else
+    echo "No prior build found. Skipping clean step."
+fi
 make arch=cirrus
 
 
