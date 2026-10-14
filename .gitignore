@@ -1,0 +1,15 @@
+# HPL build artifacts and binaries
+bin/
+lib/
+include/
+*.o
+*.grd
+*.a
+*.bak
+*~
+
+# HPL output results
+HPL.out
+
+# OS files
+.DS_Store
